@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover task</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .back
+    {
+        height: 200px;
+        width: 350px;
+        background:url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+        background-size: 100% 100%;
+        padding: 15px 15px;
+        transition: 0.7s;
+    }
+    .border
+    {
+        height: 170px;
+        width: 320px;
+        border: 5px solid white;
+        color: azure;
+        letter-spacing: 4px;
+        padding: 100px 0px 0px 160px;
+        font-size: 15px;
+        opacity: 0;
+        transition: 0.6s;
+        transform: translate(0,0);
+    }
+    .back:hover .border
+    {
+        opacity: 1;
+        transform: translate(10px,0);
+    }
+    .back:hover
+    {
+        background-position: 20px;
+    }
+</style>
+<body>
+    <div class="back">
+        <div class="border">New Arrivals</div>
+    </div>
+</body>
+</html>
